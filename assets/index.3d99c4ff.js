@@ -1785,7 +1785,7 @@ ${`Candida-te a este jogo em https://sweetspotpadel.com${c.currentRoute.value.fu
         }
       }
     }
-  `,()=>({eventId:e.eventId}));f.onResult(async m=>{const w=m.data.message;if(r.value.push(w),!(w.user_id in o.value)){const I=await g(new Array(w.user_id));o.value={...o.value,...I}}c(),p()});const d=async()=>{i.value&&(r.value.push({user:{id:n.uid},text:i.value}),l(),c()),i.value="",p()};async function p(){s.value.scrollTop+s.value.offsetHeight<=s.value.scrollHeight&&(await Zi(),s.value.scrollTop=s.value.scrollHeight)}const{query:v}=So();async function g(m){const w=`{
+  `,()=>({eventId:e.eventId}));f.onResult(async m=>{const w=m.data.message;if(r.value.push(w),!(w.user_id in o.value)){const I=await g(new Array(w.user_id));o.value={...o.value,...I}}c(),p()});const d=async()=>{i.value&&(r.value.push({user:{id:n.uid},text:i.value}),l()),i.value="",p()};async function p(){s.value.scrollTop+s.value.offsetHeight<=s.value.scrollHeight&&(await Zi(),s.value.scrollTop=s.value.scrollHeight)}const{query:v}=So();async function g(m){const w=`{
     users (filters: {ids: [${m.map(S=>`"${S}"`)}]}) {
       id
       name
